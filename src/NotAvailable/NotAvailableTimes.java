@@ -414,37 +414,39 @@ public class NotAvailableTimes extends javax.swing.JFrame {
     }//GEN-LAST:event_jTableMouseClicked
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+       
         String query = "INSERT INTO `add_location`(`room`, `day`, `stime`, `etime`) VALUES ('"+room.getText()+"','"+day.getText()+"','"+time.getText()+"','"+etime.getText()+"')";
-        executeSQLQuery(query, " Inserted");
+        executeSQLQuery(query, " Inserted ");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+       
         String query = "UPDATE `add_location` SET `room`='"+room.getText()+"',`day`='"+day.getText()+"',`stime`='"+time.getText()+"',`etime`="+etime.getText()+" WHERE `id` = "+id.getText();
-        executeSQLQuery(query , " Updated");
+        executeSQLQuery(query , " Updated ");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        
         String query = "DELETE FROM `add_location` WHERE id = "+id.getText();
-        executeSQLQuery(query, " Deleted");
+        executeSQLQuery(query, " Deleted ");
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
-        // TODO add your handling code here:
+        
         StudentNotAvailable table = new StudentNotAvailable();
          table.setVisible(true);
+         
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
-        // TODO add your handling code here:
+        
         TimeAllocations table = new TimeAllocations();
          table.setVisible(true);
+         
     }//GEN-LAST:event_jToggleButton2ActionPerformed
 
     private void jToggleButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton3ActionPerformed
-        // TODO add your handling code here:
+        
          workingDays table = new workingDays();
          table.setVisible(true);
        
