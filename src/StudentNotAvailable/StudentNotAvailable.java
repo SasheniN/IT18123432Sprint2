@@ -345,8 +345,7 @@ public class StudentNotAvailable extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTableMouseClicked
-        // TODO add your handling code here:
-        
+     
         int i =jTable.getSelectedRow();
         TableModel model = jTable.getModel();
         id.setText(model.getValueAt(i, 0).toString());
@@ -376,19 +375,19 @@ public class StudentNotAvailable extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
-        // TODO add your handling code here:
+     
          TimeAllocations table = new TimeAllocations();
          table.setVisible(true);
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
-        // TODO add your handling code here:
+      
         NotAvailableTimes table = new NotAvailableTimes();
          table.setVisible(true);
     }//GEN-LAST:event_jToggleButton2ActionPerformed
 
     private void jToggleButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton3ActionPerformed
-        // TODO add your handling code here:
+      
         workingDays table = new workingDays();
          table.setVisible(true);
     }//GEN-LAST:event_jToggleButton3ActionPerformed

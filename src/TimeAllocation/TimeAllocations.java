@@ -427,19 +427,19 @@ public class TimeAllocations extends javax.swing.JFrame {
     }//GEN-LAST:event_jTableMouseClicked
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
-        // TODO add your handling code here:
+        
          StudentNotAvailable table = new StudentNotAvailable();
          table.setVisible(true);
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
-        // TODO add your handling code here:
+       
          NotAvailableTimes table = new NotAvailableTimes();
          table.setVisible(true);
     }//GEN-LAST:event_jToggleButton2ActionPerformed
 
     private void jToggleButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton3ActionPerformed
-        // TODO add your handling code here:
+        
          workingDays table = new workingDays();
          table.setVisible(true);
     }//GEN-LAST:event_jToggleButton3ActionPerformed
