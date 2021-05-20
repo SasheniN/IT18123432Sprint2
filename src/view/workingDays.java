@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package view;
 
 import StudentNotAvailable.StudentNotAvailable;
@@ -31,13 +27,9 @@ import timeallocation.TimeAllocations;
  */
 public final class workingDays extends javax.swing.JFrame {
 
-    /**
-     * Creates new form workingDays
-     */
     public workingDays() {
         initComponents();
-       // addRowToJTable();
-        //con.getConnection();
+       
     }
     
     db_con con = new db_con();
@@ -385,9 +377,7 @@ public final class workingDays extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
-        // TODO add your handling code here:
-//        DefaultTableModel dtm = (DefaultTableModel) jTable1.getModel();
-//        dtm.addColumn("MonDay");
+       
         int a = parseInt(txt_days.getText());
         if(jCheckBox1.isSelected()){
             a++;
@@ -402,7 +392,7 @@ public final class workingDays extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBox1ActionPerformed
 
     private void jCheckBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox6ActionPerformed
-        // TODO add your handling code here:
+        
     int a = parseInt(txt_days.getText());
             if(jCheckBox6.isSelected()){
                 a++;
@@ -415,7 +405,7 @@ public final class workingDays extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBox6ActionPerformed
 
     private void jCheckBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox7ActionPerformed
-        // TODO add your handling code here:
+   
         int a = parseInt(txt_days.getText());
             if(jCheckBox7.isSelected()){
                 a++;
@@ -428,7 +418,7 @@ public final class workingDays extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBox7ActionPerformed
 
     private void jCheckBox8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox8ActionPerformed
-        // TODO add your handling code here:
+        
         int a = parseInt(txt_days.getText());
             if(jCheckBox8.isSelected()){
                 a++;
@@ -441,7 +431,7 @@ public final class workingDays extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBox8ActionPerformed
 
     private void jCheckBox9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox9ActionPerformed
-        // TODO add your handling code here:
+        
            int a = parseInt(txt_days.getText());
             if(jCheckBox9.isSelected()){
                 a++;
@@ -454,7 +444,7 @@ public final class workingDays extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBox9ActionPerformed
 
     private void jCheckBox10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox10ActionPerformed
-        // TODO add your handling code here:
+       
            int a = parseInt(txt_days.getText());
             if(jCheckBox10.isSelected()){
                 a++;
@@ -467,7 +457,7 @@ public final class workingDays extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBox10ActionPerformed
 
     private void jCheckBox11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox11ActionPerformed
-        // TODO add your handling code here:
+       
         int a = parseInt(txt_days.getText());
             if(jCheckBox11.isSelected()){
                 a++;
@@ -480,7 +470,7 @@ public final class workingDays extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBox11ActionPerformed
 
     private void hours_ComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hours_ComboActionPerformed
-        // TODO add your handling code here:
+       
         System.out.println(hours_Combo.getSelectedItem());
     }//GEN-LAST:event_hours_ComboActionPerformed
 
@@ -565,7 +555,7 @@ public final class workingDays extends javax.swing.JFrame {
     }//GEN-LAST:event_submitActionPerformed
 
     private void viewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewActionPerformed
-        // TODO add your handling code here:
+       
         jTable1.setModel(new DefaultTableModel(null,new String[]{"Time","Monday","Tuesday","Wdnesday","Thursday","Friday","Saturday","Sunday"}));
         int l_id = parseInt((String) combo_lec.getSelectedItem());
         day_details dd = new day_details();
@@ -596,8 +586,7 @@ public final class workingDays extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "No Data!!!");
         }
         
-//        WorkingDayTable table = new WorkingDayTable();
-//        table.setVisible(true);
+
         //dispose();
 
     }//GEN-LAST:event_viewActionPerformed
@@ -628,19 +617,19 @@ public final class workingDays extends javax.swing.JFrame {
     }//GEN-LAST:event_combo_lecActionPerformed
 
     private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
-        // TODO add your handling code here:
+        
          StudentNotAvailable table = new StudentNotAvailable();
          table.setVisible(true);
     }//GEN-LAST:event_jToggleButton2ActionPerformed
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
-        // TODO add your handling code here:
+        
          NotAvailableTimes table = new NotAvailableTimes();
          table.setVisible(true);
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     private void jToggleButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton3ActionPerformed
-        // TODO add your handling code here:
+        
          TimeAllocations table = new TimeAllocations();
          table.setVisible(true);
     }//GEN-LAST:event_jToggleButton3ActionPerformed

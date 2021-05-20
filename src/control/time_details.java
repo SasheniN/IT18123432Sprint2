@@ -8,17 +8,7 @@ public class time_details {
     private int time_hour;
     private int time_min;
     private int l_id;
-    
-//    public time_details(int id,int no_date,int time_hour,int time_min,int l_id){
-//        this.id = id;
-//        this.l_id = l_id;
-//        this.no_date = no_date;
-//        this.time_hour = time_hour;
-//        this.time_min = time_min;
-//    }
 
-//    public time_details() {
-//    }
 
     /**
      * @return the id
